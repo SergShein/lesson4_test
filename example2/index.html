@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <h2>Регистрация пиратов</h2>
+    <form action="/example2/home.html" method="get"> 
+   
+        <label for="nick-name-input">Ваше пиратское имя: </label>
+        <input type="text" name="nick-name" id="nick-name-input" required> <br >   <!-- "required-обязательное для заполнения" -появляется сообщение ,если поле не заполнено --> 
+        <br>
+        <label for="gold-input">Сколько  золота при вас?</label>
+        <input type="number" name="gold" id="gold-input" required>
+
+        <input type="text" placeholder="имя попугая" name="parrot"><br><br>  
+        <label for="teeth-color">Цвет ваших зубов</label>   
+        <input type="color" name="" id=""><br><br>
+
+        <label for="birth-day">Birth Day!</label>
+        <input type="date" name="birth-day"><br><br>
+
+        <label for="email-input">Input your Email:</label>
+        <input type="email" name="email" id="email-input"><br><br>
+        
+        <fieldset>
+            <legend>Контрабанда</legend>
+            <input type="checkbox" name="cats" id="cats-input">
+            <label for="cats-input"  >Коты</label>
+
+            <input type="checkbox" name="Alhocol" id="alhogol-rom" checked> <!--checked - ставит галочку по умолчанию-->
+            <label for="alhogol-rom"  >Ром в бочках</label>
+
+            <input type="checkbox" name="herring" id="herring-input">
+            <label for="herring-input">Селёдка</label>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Оружие</legend>
+            <div>
+                <input type="radio" name="weapon" id="radio-pistol" value="pistol" checked>
+                <label for="radio-pistol">Пистолеты</label>
+            </div>
+            <div>
+                <input type="radio" name="weapon" id="radio-sabl" value="sabl">
+                <label for="radio-sabl">Сабля</label>
+            </div>
+        </fieldset>
+
+        <label for="legs-input">Количество ног: </label>
+        <select name="number-of-legs" id="legs-input">    <!--select- выпадающий список-->
+            <option value="1">одна нога</option>
+            <option value="2"selected>две ноги</option>  <!--selected - как и checked - ставит галочку по умолчанию-->
+            <option value="3">три ноги</option>
+        </select>
+
+        <div>
+            <p>
+                <input type="file" name="userphoto" id="">
+            </p>
+        </div><br>
+        <div>
+            <textarea name="text" id="" cols="30" rows="10" value></textarea>
+        </div><br>
+        
+        
+        <button type="submit"> Подать заявку на вступление! </button>
+        <button type="reset">Очистить</button>
+         
+    </form>   
+
+   
+
+    
+</body>
+</html>
